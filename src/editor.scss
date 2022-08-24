@@ -1,0 +1,43 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-mbp-mbp-query {
+	border: 1px dotted #f00;
+}
+.editor-styles-wrapper {
+    .draft-block {
+
+        border-bottom: 1px dotted #cfcfcf;
+        border-left: 1px solid #cfcfcf;
+        border-right: 1px solid #cfcfcf;
+        margin-top: 3em;
+
+        &::before {
+            background: #cfcfcf;
+            background-image: linear-gradient(45deg, #efefef 8.33%, #cfcfcf 8.33%, #cfcfcf 50%, #efefef 50%, #efefef 58.33%, #cfcfcf 58.33%, #cfcfcf 100%);
+            background-size: 8.49px 8.49px;
+            border-left: 1px solid #cfcfcf;
+            border-right: 1px solid #cfcfcf;
+            border-top: 1px solid #cfcfcf;
+            color: black;
+            content: 'Draft Block';
+            display: block;
+            font-family: monospace;
+            font-size: 1rem;
+            left: 0;
+            padding-left: 5px;
+            position: absolute;
+            top: -27px;
+            width: 100%;
+        }
+
+        opacity: .4;
+
+        &.is-selected {
+            opacity: .8;
+        }
+    }
+}
